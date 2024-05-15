@@ -1,1 +1,4 @@
 orjson
+httpbin
+gunicorn
+httpx

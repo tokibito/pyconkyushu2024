@@ -11,7 +11,8 @@ def main():
 
     result = 0
     with open(DATA_FILE, "rb") as input_file:
-        result = input_file.read().count(b"\n")
+        data = input_file.read()
+        result = data.count(b"\n")
 
     print(f"result: {result} lines")
 
