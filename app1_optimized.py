@@ -10,9 +10,8 @@ def main():
     print("start:", datetime.datetime.now())
 
     result = 0
-    with open(DATA_FILE) as input_file:
-        for line in input_file:
-            result += 1
+    with open(DATA_FILE, "rb") as input_file:
+        result = input_file.read().count(b"\n")
 
     print(f"result: {result} lines")
 
