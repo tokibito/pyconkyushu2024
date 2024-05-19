@@ -5,8 +5,7 @@ DATA_FILE = "data.jsonl"
 
 
 def main():
-    """ファイルの行数をカウントするスクリプト
-    """
+    """ファイルの行数をカウントするスクリプト"""
     print("start:", datetime.datetime.now())
 
     result = 0

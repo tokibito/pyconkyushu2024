@@ -5,8 +5,7 @@ DATA_FILE = "data.jsonl"
 
 
 def main():
-    """ファイル内のUUIDに重複がないか検証するスクリプト
-    """
+    """ファイル内のUUIDに重複がないか検証するスクリプト"""
     print("start:", datetime.datetime.now())
 
     uuids = set()
