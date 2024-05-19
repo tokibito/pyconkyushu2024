@@ -11,7 +11,9 @@ def main():
     uuids = set()
     with open(DATA_FILE) as input_file:
         records = input_file.read().splitlines()
+
     print("read file finished.")
+
     for line in records:
         data = orjson.loads(line)
         value = data["value"]
