@@ -10,8 +10,11 @@ def main():
 
     result = 0
     with open(DATA_FILE, "rb") as input_file:
-        data = input_file.read()
-        result = data.count(b"\n")
+        while True:
+            data = input_file.read(1024 * 1024)
+            if not data:
+                break
+            result += data.count(b"\n")
 
     print(f"result: {result} lines")
 
