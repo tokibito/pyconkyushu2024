@@ -7,8 +7,6 @@ url = "http://127.0.0.1:5000/delay/1"
 
 async def main():
     """API呼び出しを10回実行
-
-    httpbinの起動は `gunicorn --threads=10 -b=127.0.0.1:5000 httpbin:app`
     """
     print("start:", datetime.datetime.now())
 
