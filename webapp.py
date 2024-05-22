@@ -10,5 +10,6 @@ def index():
         # プロファイル対象のコードここから
         call_api_main()
         # プロファイル対象のコードここまで
+        # 結果をファイルに保存
         pr.dump_stats("webapp.profile")
     return "Finished"
